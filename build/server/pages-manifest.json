@@ -1,0 +1,12 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/api/hello": "pages/api/hello.js",
+  "/create-record/private": "pages/create-record/private.html",
+  "/create-record/public": "pages/create-record/public.html",
+  "/": "pages/index.html",
+  "/register": "pages/register.html",
+  "/signin": "pages/signin.html",
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html"
+}
