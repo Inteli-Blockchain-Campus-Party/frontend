@@ -9,7 +9,7 @@ const Navigator = () => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route exact path='/teste' element={<IndexScreen />} />
+                <Route exact path='/' element={<IndexScreen />} />
                 <Route path='*' element={<NotFoundScreen />} />
             </Routes>
         </BrowserRouter>
