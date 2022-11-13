@@ -1,8 +1,10 @@
+import Link from "next/link";
 import { useState } from "react";
-import { HealthVault } from "../assets/HealthVault";
-import { Layout } from "../components/Layout";
+import { HealthVault } from "../../assets/HealthVault";
+import { PrivateIcon } from "../../assets/PrivateIcon";
+import { Layout } from "../../components/Layout";
 
-const Register = () => {
+const RegisterPrivate = () => {
   const [history, setHistory] = useState([
     {
       title: "Peanut allergy",
@@ -74,15 +76,35 @@ const Register = () => {
 
   return (
     <Layout title="Register">
-      <div id="bg" className="bg-black">
-        {/*  create a top bar with the logo*/}
-        <div className="flex w-full">
-          <HealthVault width={128} className="mx-auto my-auto h-full" />
+      <div
+        id="bg"
+        className="bg-black flex flex-1 flex-col min-h-screen h-full"
+      >
+        {/*  create a top bar with the logo */}
+        <div className="flex flex-col lg:flex-row w-full lg:px-8 justify-between pt-8">
+          <Link href="/">
+            <HealthVault
+              width={128}
+              className="my-auto h-full lg:w-fit lg:mx-0"
+            />
+          </Link>
+
+          <p className="flex flex-row text-xl text-white align-middle justify-center items-center lg:w-auto">
+            Your private records
+            <PrivateIcon width={32} className="ml-2" />
+          </p>
         </div>
 
         {/* Smaller */}
-        <div className="text-white w-11/12 mx-auto mt-8 flex flex-row justify-between">
-          <div className="bg-[#4848485e] py-6 px-4 rounded-2xl w-1/5 overflow-auto">
+        <div className="text-white w-11/12 mx-auto mt-8 flex flex-1 flex-row justify-between h-full max-h-[85vh] pb-8">
+          <div
+            className="bg-[#4848485e] py-6 px-4 rounded-2xl w-1/5 overflow-y-auto max-h-max"
+            id="scroll"
+            style={{
+              scrollbarWidth: "thin",
+              scrollbarColor: "#ffffffa1 #4848485e",
+            }}
+          >
             <div className="w-full text-center">
               <p className="text-xl mb-2">My Allergies</p>
               <div className="w-full lg:w-2/3 mx-auto">
@@ -97,14 +119,13 @@ const Register = () => {
                       {item.title}
                     </p>
                   ))}
-
                 <button className="bg-[#1460D294] w-full lg:w-2/3 mb-4 rounded-lg">
                   <p>Add allergy</p>
                 </button>
               </div>
             </div>
 
-            <div className="w-full text-center">
+            <div className="w-full text-center  max-h-screen">
               <p className="text-xl mb-2">My Conditions</p>
               <div className="w-full lg:w-2/3 mx-auto">
                 {history
@@ -192,4 +213,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default RegisterPrivate;

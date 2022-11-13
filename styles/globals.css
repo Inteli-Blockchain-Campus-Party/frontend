@@ -16,11 +16,26 @@ body {
 
 #bg {
   background-image: url("../assets/bg.svg");
-  background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
   background-attachment: inherit;
   background-size: 200%;
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  min-width: 100vw;
+  height: 100%;
+  width: 100%;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 0.5rem;  
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.scroll::-webkit-scrollbar-track {
+  background: #4848485e; 
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background: #4848485e; 
 }

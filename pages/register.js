@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 import { HealthVault } from "../assets/HealthVault";
 import { PrivateIcon } from "../assets/PrivateIcon";
@@ -5,14 +6,14 @@ import { PublicIcon } from "../assets/PublicIcon";
 import { Layout } from "../components/Layout";
 
 const Register = () => {
-  const [selected, setSelected] = useState("private");
+  const [selected, setSelected] = useState("");
 
   return (
     <Layout title="Register">
       <div id="bg" className="bg-black">
         {/*  create a top bar with the logo*/}
-        <div className="flex w-full">
-          <HealthVault width={128} className="mx-auto my-auto h-full" />
+        <div className="flex w-full pt-8">
+          <Link href="/" className="mx-auto">  <HealthVault width={128} className="mx-auto my-auto h-full" /> </Link>
         </div>
 
         <div className="text-white w-5/12 mx-auto mt-16">
@@ -28,9 +29,9 @@ const Register = () => {
                 onClick={() => setSelected("public")}
                 className={`
                 ${
-                  selected === "private"
-                    ? "bg-[#d9d9d91a] rounded-2xl"
-                    : "bg-[#1460D2] rounded-2xl"
+                  selected === "public"
+                  ? "bg-[#1460D2] rounded-2xl"
+                  : "bg-[#d9d9d91a] rounded-2xl"
                 } px-16 py-10 flex flex-col justify-center items-center decoration-none cursor-pointer
               `}
               >
@@ -63,9 +64,19 @@ const Register = () => {
             </div>
 
             <div className="mt-8 flex justify-center">
-              <button className="w-full lg:w-1/2 px-4 py-2 bg-[#1460D2] rounded-xl">
+              <Link
+                className="w-full lg:w-1/2 px-4 py-2 bg-[#1460D2] rounded-xl text-center"
+                aria-disabled={selected === ""}
+                href={
+                  selected
+                    ? selected == "private"
+                      ? "/create-record/private"
+                      : "/create-record/public"
+                    : "#"
+                }
+              >
                 Continue
-              </button>
+              </Link>
             </div>
           </div>
         </div>
