@@ -2,8 +2,8 @@ import React from "react";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 
 // Screens Import
-import IndexScreen from "../Screens/IndexScreen";
-import NotFoundScreen from "../Screens/NotFoundScreen";
+import IndexScreen from "../Screens/Index/IndexScreen";
+import NotFoundScreen from "../Screens/NotFoundScreen/NotFoundScreen";
 
 const Navigator = () => {
     return (
