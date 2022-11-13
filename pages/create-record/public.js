@@ -89,10 +89,12 @@ const RegisterPublic = () => {
             />
           </Link>
 
-          <p className="flex flex-row text-xl text-white align-middle justify-center items-center lg:w-auto">
-            Your public records
-            <PublicIcon width={32} className="ml-2" />
-          </p>
+          <div>
+            <p className="flex flex-row text-xl text-white align-middle justify-center items-center lg:w-auto">
+              Your public records
+              <PublicIcon width={32} className="ml-2" />
+            </p>
+          </div>
         </div>
 
         {/* Smaller */}
@@ -100,91 +102,10 @@ const RegisterPublic = () => {
           <div
             className="bg-[#4848485e] py-6 px-4 rounded-2xl w-1/5 overflow-y-auto max-h-max scroll"
             id="scroll"
-            style={{
-              scrollbarWidth: "thin",
-              scrollbarColor: "#ffffffa1 #4848485e",
-            }}
           >
             <div className="w-full text-center">
               <p className="text-xl mb-2">My Allergies</p>
               <div className="w-full lg:w-2/3 mx-auto">
-                {history
-                  .filter((item) => item.type === "allergy")
-                  .map((item) => (
-                    <p
-                      onClick={() => setHighlighted(item)}
-                      className="bg-[#c4c4c4a1] mb-2 rounded-lg cursor-pointer hover:bg-[#e2e2e2a1]"
-                      key={item.title}
-                    >
-                      {item.title}
-                    </p>
-                  ))}
-                {history
-                  .filter((item) => item.type === "allergy")
-                  .map((item) => (
-                    <p
-                      onClick={() => setHighlighted(item)}
-                      className="bg-[#c4c4c4a1] mb-2 rounded-lg cursor-pointer hover:bg-[#e2e2e2a1]"
-                      key={item.title}
-                    >
-                      {item.title}
-                    </p>
-                  ))}
-                {history
-                  .filter((item) => item.type === "allergy")
-                  .map((item) => (
-                    <p
-                      onClick={() => setHighlighted(item)}
-                      className="bg-[#c4c4c4a1] mb-2 rounded-lg cursor-pointer hover:bg-[#e2e2e2a1]"
-                      key={item.title}
-                    >
-                      {item.title}
-                    </p>
-                  ))}
-                {history
-                  .filter((item) => item.type === "allergy")
-                  .map((item) => (
-                    <p
-                      onClick={() => setHighlighted(item)}
-                      className="bg-[#c4c4c4a1] mb-2 rounded-lg cursor-pointer hover:bg-[#e2e2e2a1]"
-                      key={item.title}
-                    >
-                      {item.title}
-                    </p>
-                  ))}
-                {history
-                  .filter((item) => item.type === "allergy")
-                  .map((item) => (
-                    <p
-                      onClick={() => setHighlighted(item)}
-                      className="bg-[#c4c4c4a1] mb-2 rounded-lg cursor-pointer hover:bg-[#e2e2e2a1]"
-                      key={item.title}
-                    >
-                      {item.title}
-                    </p>
-                  ))}
-                {history
-                  .filter((item) => item.type === "allergy")
-                  .map((item) => (
-                    <p
-                      onClick={() => setHighlighted(item)}
-                      className="bg-[#c4c4c4a1] mb-2 rounded-lg cursor-pointer hover:bg-[#e2e2e2a1]"
-                      key={item.title}
-                    >
-                      {item.title}
-                    </p>
-                  ))}
-                {history
-                  .filter((item) => item.type === "allergy")
-                  .map((item) => (
-                    <p
-                      onClick={() => setHighlighted(item)}
-                      className="bg-[#c4c4c4a1] mb-2 rounded-lg cursor-pointer hover:bg-[#e2e2e2a1]"
-                      key={item.title}
-                    >
-                      {item.title}
-                    </p>
-                  ))}
                 {history
                   .filter((item) => item.type === "allergy")
                   .map((item) => (

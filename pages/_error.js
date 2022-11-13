@@ -5,7 +5,7 @@ const FourOhFour = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
       <Head>
-        <title>HealthVault</title>
+        <title>404 - HealthVault</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

@@ -89,10 +89,12 @@ const RegisterPrivate = () => {
             />
           </Link>
 
-          <p className="flex flex-row text-xl text-white align-middle justify-center items-center lg:w-auto">
-            Your private records
-            <PrivateIcon width={32} className="ml-2" />
-          </p>
+          <div>
+            <p className="flex flex-row text-xl text-white align-middle justify-center items-center lg:w-auto">
+              Your private records
+              <PrivateIcon width={32} className="ml-2" />
+            </p>
+          </div>
         </div>
 
         {/* Smaller */}
