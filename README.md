@@ -6,3 +6,5 @@
 
 ## Deploy
 Vercel: https://hackathon-bnb-chain.vercel.app/
+
+## Integrantes: <a href="https://www.linkedin.com/in/elisaflemer/">Elisa Flemer</a>, <a href="https://www.linkedin.com/in/marcelofeitoza7/">Marcelo G Feitoza</a>, <a href="https://www.linkedin.com/in/rafael-mateus-zimmer-techio-6679091a0/">Rafael Techio</a>, <a href="https://www.linkedin.com/in/victor-severiano-de-carvalho-b57a05237/">Victor Severiano de Carvalho</a>
