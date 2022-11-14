@@ -11,11 +11,14 @@ const FourOhFour = () => {
 
       <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center bg-[#000] text-white" id="bg">
         <h1 className="text-6xl font-bold">
-          404 - This page could not be found
+          404
+        </h1>
+        <h1 className="text-6xl font-bold">
+          Opa! Ainda estamos trabalhando nessa página!
         </h1>
 
         <p className="mt-3 text-2xl">
-          Go back to the{" "}
+          Clique aqui para voltar à {" "}
           <Link href="/" className="text-blue-600 hover:text-blue-500">
             homepage
           </Link>
