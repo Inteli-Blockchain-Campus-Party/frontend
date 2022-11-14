@@ -20,12 +20,12 @@ export default function Home() {
 
         <div className="w-full lg:w-3/4 mx-auto flex flex-col lg:flex-row text-white">
           <div className="w-full lg:w-1/2 px-8 pt-16 lg:pt-0">
-            <HealthVault width={512} className="mx-auto my-auto h-full" />
+            <HealthVault className="mx-auto my-auto h-full w-2/3 lg:w-3/4" />
           </div>
 
           <div className="w-full lg:w-1/2 px-8 py-16">
             <div className="mx-auto h-full pb-16 lg:pb-0">
-              <p className="text-4xl font-bold text-center">
+              <p className="text-4xl lg:text-3xl font-bold text-center">
                 Everything your doctor needs to know about you.
                 <br />
                 Where and when you most need it.
@@ -33,15 +33,15 @@ export default function Home() {
 
               <div className="mt-4 w-full flex flex-col justify-center items-center align-middle">
                 <Link
-                  href="/register"
-                  className="px-8 py-4 rounded-xl bg-gradient-to-br from-[#606060] to-[#9d9d9d4b] text-white text-xl font-bold mb-4 w-full text-center md:w-1/2 lg:w-2/3 cursor-pointer"
+                  href="/signin"
+                  className="px-8 py-4 rounded-xl bg-gradient-to-br from-[#606060] to-[#9d9d9d4b] text-white text-lg lg:text-xl font-bold mb-4 w-full text-center md:w-2/ lg:w-3/4 cursor-pointer"
                 >
                   <p className="text-lg">I want to add my records</p>
                 </Link>
 
                 <Link
                   href="/company"
-                  className="px-8 py-4 rounded-xl border-2 border-[#606060] text-white text-xl font-bold w-full text-center md:w-1/2 lg:w-2/3 cursor-pointer"
+                  className="px-8 py-4 rounded-xl border-2 border-[#606060] text-white text-lg lg:text-xl font-bold w-full text-center md:w-3/4 lg:w-fit cursor-pointer "
                 >
                   <p>I want to see someone records</p>
                 </Link>
